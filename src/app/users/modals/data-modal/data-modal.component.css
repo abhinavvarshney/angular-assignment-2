@@ -1,0 +1,24 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+ 
+.fade.in {
+    opacity: 1 !important;
+    transition: 4s ease-in-out;
+}
+    
+.modal.in .modal-dialog {
+    -webkit-transform: translate(0, 0) !important;
+    -o-transform: translate(0, 0) !important;
+    transform: translate(0, 0) !important;
+}
+    
+.modal-backdrop .fade .in {
+    opacity: 2 !important;
+}
+    
+.modal-backdrop.fade {
+    opacity: 2 !important;
+}
+    
+.modal{
+    overflow-y:auto;
+}
