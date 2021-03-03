@@ -20,12 +20,12 @@ export class DataModalComponent implements OnInit {
     console.log(this.fromParent);
   }
 
-  closeModal(sendData:any) {
-    this.activeModal.close(sendData);
+  closeModal() {
+    this.activeModal.close();
   }
   saveData(){
     this.userService.saveFormValues(this.fromParent);
-    this.router.navigateByUrl('users/view')
     this.activeModal.close();
+    this.router.navigateByUrl('users/view');
   }
 }
